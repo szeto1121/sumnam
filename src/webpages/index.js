@@ -30,9 +30,10 @@ function Webpages() {
                 {/*<Route exact path="/" component= {Home} />*/}
             {/*</Routes>*/}
                 <Routes>
-                <Route path="/summerleague" component={SummerLeague} />
-                <Route path="/coaches" component={Coaches} />
-                <Route path="*" component={Home} />
+                    <Route path="/summerleague" element={<SummerLeague/>} />
+                    <Route path="/coaches" element={<Coaches/>} />
+                    <Route path="*" element={<Home/>} />
+                    <Route path="/" element={<Home/>} />
                 </Routes>
             </div>
         </BrowserRouter>
