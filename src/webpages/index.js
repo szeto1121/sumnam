@@ -26,7 +26,7 @@ function Webpages() {
                 <Routes>
                     <Route path="/summerleague" element={<SummerLeague/>} />
                     <Route path="/coaches" element={<Coaches/>} />
-                    <Route path="/" element={<HoKme/>} />
+                    <Route path="/" element={<Home/>} />
                     <Route path="*" element={<div>404NotFound</div>} />
                 </Routes>
             </div>
