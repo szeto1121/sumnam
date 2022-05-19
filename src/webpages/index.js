@@ -23,17 +23,11 @@ function Webpages() {
                 </ul>
 
                 <hr />
-            {/*<Routes>*/}
-            {/*    <Route path = "/summerleague" ><SummerLeague/></Route>*/}
-            {/*    <Route path = "/coaches"  ><Coaches/></Route>*/}
-            {/*    <Route path = "/home"   ><Home/></Route>*/}
-                {/*<Route exact path="/" component= {Home} />*/}
-            {/*</Routes>*/}
                 <Routes>
                     <Route path="/summerleague" element={<SummerLeague/>} />
                     <Route path="/coaches" element={<Coaches/>} />
-                    <Route path="*" element={<Home/>} />
-                    <Route path="/" element={<Home/>} />
+                    <Route path="/" element={<HoKme/>} />
+                    <Route path="*" element={<div>404NotFound</div>} />
                 </Routes>
             </div>
         </BrowserRouter>
