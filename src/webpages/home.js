@@ -1,5 +1,3 @@
-//file: src/webpages/home.js
-
 import React from 'react';
 const Home = () => {
     return (
